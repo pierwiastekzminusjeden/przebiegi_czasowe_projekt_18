@@ -14,7 +14,7 @@ class DataContainer;
 
 /**
 * Klasa MyInterface dziedziczaca po klasie MyFrame. Zawiera implementacje metod eventow klasy bazowej. Laczy caly program. Zawiera wskazniki na 
-* obiekt klasy DataContainer oraz klasy rysuj¹cej DrawingClass.
+* obiekt klasy DataContainer oraz klasy rysujacej DrawingClass.
 */
 class MyInterface: public MyFrame
 {
@@ -98,6 +98,7 @@ class MyInterface: public MyFrame
 
 
 	private: 
+	
 		/**
 		* Wskasnik na obiekt klasy odpowiadajacej za rysowanie poszczegolnych elementow na ekranie.
 		*/

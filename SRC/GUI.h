@@ -45,7 +45,7 @@ class MyFrame : public wxFrame
 {
 	public:
 		/**
-		* Konstruktor klasy, ustawia podstawowe parametry takie jak wielkosc okna, tytu³ okna, nazwy przycisków i ich rozmieszczenie itd.
+		* Konstruktor klasy, ustawia podstawowe parametry takie jak wielkosc okna, tytuï¿½ okna, nazwy przyciskï¿½w i ich rozmieszczenie itd.
 		*/
 		MyFrame( wxWindow* parent, wxWindowID id = wxID_ANY, const wxString& title = wxT("Przebiegi czasowe"), const wxPoint& pos = wxDefaultPosition, const wxSize& size = wxSize( 698,525 ), long style = wxDEFAULT_FRAME_STYLE|wxTAB_TRAVERSAL );
 		
@@ -57,37 +57,37 @@ class MyFrame : public wxFrame
 	protected:
 
 		/**
-		*Obiekt klasy wxToggleButton sluzocy do rozpoczêcia pobierania dancyh z pliku i rysowania ich w uk³adzie wspolrzednych
+		*Obiekt klasy wxToggleButton sluzocy do rozpoczecia pobierania dancyh z pliku i rysowania ich w uladzie wspolrzednych
 		*/
 		wxButton* wx_startButton;
 
 		/**
-		* Obiekt klasy wxButton sluzacy do zatrzymania pobierania dancyh z pliku i rysowania ich w uk³adzie wspolrzednych
+		* Obiekt klasy wxButton sluzacy do zatrzymania pobierania dancyh z pliku i rysowania ich w ukladzie wspolrzednych
 		*/
 		wxButton* wx_stopButton;
 
 		/**
-		* Obiekt klasy wxButton resetuj¹cy dane i usuwajacy historie wczytanych danych
+		* Obiekt klasy wxButton resetujacy dane i usuwajacy historie wczytanych danych
 		*/
 		wxButton* wx_resetButton;
 
 		/**
-		* Obiekt klasy wxRadioButton s³uzacy do wybrania pierwszego trybu pracy (wybrany domyslnie)
+		* Obiekt klasy wxRadioButton sauzacy do wybrania pierwszego trybu pracy (wybrany domyslnie)
 		*/
 		wxRadioButton* wx_firstModeRadioButton;
 		
 		/**
-		* Obiekt klasy wxRadioButton s³u¿¹cy do wybrania drugieo trybu pracy 
+		* Obiekt klasy wxRadioButton sluzacy do wybrania drugieo trybu pracy 
 		*/
 		wxRadioButton* wx_secondModeRadioButton;
 
 		/**
-		* Obiekt klasy wxCheckBox s³u¿¹cy narysowania siatki uk³adu wspolrzednych
+		* Obiekt klasy wxCheckBox sluzacy narysowania siatki ukladu wspolrzednych
 		*/
 		wxCheckBox* wx_gridBox;
 
 		/**
-		*  Obiekt klasy wxPanel s³u¿¹cy do narysowania uk³adu wspolrzednych oraz danych pobranych z oscyloskopu
+		*  Obiekt klasy wxPanel sluzacy do narysowania ukladu wspolrzednych oraz danych pobranych z oscyloskopu
 		*/
 		wxPanel* wx_drawingPanel;
 

@@ -3,7 +3,7 @@
 #include "Data.h"
 
 /**
-* Klaasa bï¿½dï¿½ca kontenerem na dane wczytywane z pliku. Obsauguje cala prace z surowymi danymi. W kontenerze przechowywane jest ostatnie 100s danych.
+* Klaasa bêd¹ca kontenerem na dane wczytywane z pliku. Obs³uguje ca³¹ prace z surowymi danymi. W kontenerze przechowywane jest ostatnie 100s danych.
 */
 class DataContainer
 {
@@ -15,7 +15,7 @@ class DataContainer
 		DataContainer(int partCapacity);
 
 		/**
-		* Destruktor. Dealokuje pamiec na listy
+		* Destruktor. Dealokuje pamiec przydzielona na listy
 		*/
 		~DataContainer();
 

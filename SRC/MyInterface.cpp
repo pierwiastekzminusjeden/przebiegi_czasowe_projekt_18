@@ -61,7 +61,6 @@ void MyInterface::wxButton_start(wxCommandEvent & event)
 void MyInterface::wxButton_stop(wxCommandEvent & event)
 {
 	m_drawingFlag = false;
-
 }
 
 int MyInterface::reset = 1;

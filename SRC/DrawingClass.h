@@ -18,11 +18,6 @@ class DrawingClass
 		DrawingClass(MyInterface *obj);
 		
 		/**
-		* Destruktor
-		*/
-		~DrawingClass();
-		
-		/**
 		* Publiczna metoda wywolywana w metodzie MyInterface::Repaint(). Rysuje na panelu poszczegolne elementy oraz wykres. Korzysta z prywatnych metod pomocniczych.
 		*/
 		void draw(wxDC *dc);
@@ -50,7 +45,7 @@ class DrawingClass
 		static int start_minus_X;
 
 		/**
-		* zmienna pomocnicza do podpisywania osi, zeby program wiedzial o ile ma przesunac os X (czyli jaki jest maksymalna podzialka widoczna)
+		* zmienna pomocnicza do podpisywania osi, zeby program wiedzial o ile ma przesunac oœ X (czyli jaki jest maksymalna podzia³ka widoczna)
 		*/
 		static int ile_X;
 
@@ -65,7 +60,7 @@ class DrawingClass
 		static int start_minus_Y;
 
 		/**
-		* zmienna pomocnicza do podpisywania osi, zeby program wiedzial o ile ma przesunac os Y (czyli jaki jest maksymalna podzialka widoczna)
+		* zmienna pomocnicza do podpisywania osi, zeby program wiedzial o ile ma przesunac oœ Y (czyli jaki jest maksymalna podzia³ka widoczna)
 		*/
 		static int ile_Y;
 
@@ -87,7 +82,7 @@ class DrawingClass
 		/**
 		* Metoda pomocnicza odpowiadajaca za scalowanie i przesuniecie wykresu
 		*/
-		wxPoint* scale_translate(wxDC * dc);
+		wxPoint* scaleTranslate(wxDC * dc);
 
 		/**
 		* Wskaznik na obiekt klasy @MyInterface

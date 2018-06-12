@@ -4,8 +4,6 @@
 DrawingClass::DrawingClass(MyInterface *obj): m_myInterfacePTR(obj){ 
 }
 
-DrawingClass::~DrawingClass(){}
-
 int DrawingClass::start_plus_X = 0;
 int DrawingClass::start_minus_X = -1;
 int DrawingClass::ile_X = 0;
@@ -62,14 +60,12 @@ void DrawingClass::drawAxes(wxDC * dc)
 	dc->DrawLine(0, 0.5*h , w , 0.5*h );
 	dc->DrawLine(0.5*w , 0 , 0.5*w , h );
 	
-	//strza³ki
 	dc->DrawLine(w- 20, 0.5*h + 10, w , 0.5*h);
 	dc->DrawLine(w - 20, 0.5*h - 10, w , 0.5*h);
 
 	dc->DrawLine(0.5*w, 0, 0.5*w - 10, 30);
 	dc->DrawLine(0.5*w, 0, 0.5*w + 10, 30);
 
-	//podzaialki
 	int i, j;
 	int dens = 100;
 
@@ -90,11 +86,9 @@ void DrawingClass::drawAxes(wxDC * dc)
 
 		if (big%10 == 0)
 		{
-			//rysowanie wiekszych podzia³ek
 			dc->DrawLine(i, h / 2 - 12, i, h / 2 + 12);
 			dc->DrawLine(j, h / 2 - 12, j, h / 2 + 12);
 
-			//podpis pod wieksza podzialka
 			dc->DrawText(minus, j - w/20 - 30, h / 2 + 15);
 			if(str_pl_X!= str_pl_X+ile_X)
 				dc->DrawText(plus, i - 2, h / 2 + 15);
@@ -105,7 +99,6 @@ void DrawingClass::drawAxes(wxDC * dc)
 		}
 		else
 		{
-			//rysowanie mniejszych podzia³ek
 			dc->DrawLine(i, h / 2 - 6, i, h / 2 + 6);
 			dc->DrawLine(j, h / 2 - 6, j, h / 2 + 6);
 		}
@@ -124,11 +117,9 @@ void DrawingClass::drawAxes(wxDC * dc)
 
 		if (big % 10 == 0)
 		{
-			//rysowanie wiekszych podzia³ek
 			dc->DrawLine(w/2-12, i, w/2+12, i);
 			dc->DrawLine(w / 2 - 12, j, w / 2 + 12, j);
 
-			//podpis pod wieksza podzialka
 			if(str_pl_Y!=0)
 				dc->DrawText(plus, w / 2 - 22 , j-6);
 			dc->DrawText(minus, w / 2 - 30, i +h/20 - 10 );
@@ -137,14 +128,6 @@ void DrawingClass::drawAxes(wxDC * dc)
 			str_mn_Y = str_mn_Y - 1;
 			ile_Y++;
 		}
-		/* mniejsze podzia³ki na osi Y 
-		else
-		{
-			//rysowanie mniejszych podzia³ek
-			dc->DrawLine(w / 2 - 6, i, w / 2 + 6, i);
-			dc->DrawLine(w / 2 - 6, j, w / 2 + 6, j);
-		}*/
-
 		big++;
 
 	}
@@ -180,13 +163,11 @@ void DrawingClass::drawGrid(wxDC * dc)
 }
 
 
-
 void DrawingClass::drawData(wxDC * dc) 
 {
 	
-	
 	int lastIndex = m_myInterfacePTR->m_dataContainer->getLastIndex();
-	wxPoint *arr2 = m_myInterfacePTR->m_drawingClass->scale_translate(dc);
+	wxPoint *arr2 = m_myInterfacePTR->m_drawingClass->scaleTranslate(dc);
 	int w = m_myInterfacePTR->getWidth();
 	int size = 200;
 
@@ -210,7 +191,7 @@ void DrawingClass::drawData(wxDC * dc)
 int DrawingClass::trans = 0;
 int DrawingClass::trans2 = 0.5;
 
-wxPoint* DrawingClass::scale_translate(wxDC * dc)
+wxPoint* DrawingClass::scaleTranslate(wxDC * dc)
 {
 	double * arr_x = m_myInterfacePTR->m_dataContainer->getListPointer_Time();
 	double * arr_y = m_myInterfacePTR->m_dataContainer->getListPointer_Value();

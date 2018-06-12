@@ -2,14 +2,14 @@
 #include <fstream>  
 
 /**
-* Klasa, ktorej obiekt reprezentujaca punkt (czas, parametr) pobrany z pliku. 
+*\ Klasa, ktorej obiekt reprezentuj¹ca punkt (czas, parametr) pobrany z pliku. 
 */
 class Data{
   
 	public:
 	
 		/**
-		*  Konstruktor. Ustawia wartosc czasu oraz wartosc funkcji w danej chwili. Jezeli nie zostana podane rzadne parametry, wartocci zostana ustawione jako zera.
+		*  Konstruktor. Ustawia wartosc czasu oraz wartoœæ funkcji w danej chwili. Jezeli nie zostan¹ podane rzadne parametry, wartocci zostan¹ ustawione jako zera.
 		*/
         Data(double Time=0.0, double Value=0.0){
 			this->Time = Time;
@@ -22,12 +22,12 @@ class Data{
         double GetTime() const { return this->Time; }
 	
 		/**
-		* Metoda dostepowa zwracajaca wartosc funkcji.
+		* Metoda dostêpowa zwracaj¹ca wartosc funkcji.
 		*/
         double GetValue() const{ return this->Value; }
 	
 		/**
-		* Metoda ustawiajaca wartosc czasu oraz wartosc funkcji.
+		* Metoda ustawiaj¹ca wartosc czasu oraz wartosc funkcji.
 		*/
         void SetData(double Time, double Value){
             this->Time = Time;
@@ -44,20 +44,16 @@ class Data{
 			this->SetData(times, value);
 		};
 		
-		/**
-		* Destruktor
-		*/
-        ~Data(){};
-
+	
     private:
 
 		/**
-		* Zmienna reprezentujaca czas wyrazony w sekundach.
+		* Zmienna reprezentuj¹ca czas wyrazony w sekundach.
 		*/
 		double Time;
 		
 		/**
-		* Zmienna reprezentujaca wartosc funkcji w danej chwili czasowej.
+		* Zmienna reprezentuj¹ca wartosc funkcji w danej chwili czasowej.
 		*/
 		double Value;
       

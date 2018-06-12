@@ -50,7 +50,7 @@ class DrawingClass
 		static int start_minus_X;
 
 		/**
-		* zmienna pomocnicza do podpisywania osi, zeby program wiedzial o ile ma przesunac oœ X (czyli jaki jest maksymalna podzia³ka widoczna)
+		* zmienna pomocnicza do podpisywania osi, zeby program wiedzial o ile ma przesunac os X (czyli jaki jest maksymalna podzialka widoczna)
 		*/
 		static int ile_X;
 
@@ -65,7 +65,7 @@ class DrawingClass
 		static int start_minus_Y;
 
 		/**
-		* zmienna pomocnicza do podpisywania osi, zeby program wiedzial o ile ma przesunac oœ Y (czyli jaki jest maksymalna podzia³ka widoczna)
+		* zmienna pomocnicza do podpisywania osi, zeby program wiedzial o ile ma przesunac os Y (czyli jaki jest maksymalna podzialka widoczna)
 		*/
 		static int ile_Y;
 

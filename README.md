@@ -10,3 +10,5 @@ Konrad Pasik<br />
 Więej informacji o projekcie znajduje się w katalogu DOC w pliku dokumentacja.<br /> 
 Katalog SRC zawiera kody źródłowe programu.<br /> 
 Katalog BIN zawiera gotowe pliki wykonnywalne.<br /> 
+
+![przechwytywanie](https://user-images.githubusercontent.com/32602516/42593470-d4095430-854c-11e8-9f70-876aef008f35.PNG)
